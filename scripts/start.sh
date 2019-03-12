@@ -15,4 +15,4 @@ then
     echo "eula=true" > /data/eula.txt
 fi
 
-cd /data/; java -Xmx2G -jar $server nogui
+exec java -Xmx2G -jar $server nogui
