@@ -3,7 +3,7 @@
 # docker-minecraft /start.sh script
 # -----------------------------------------------------------------------------
 
-server="minecraft_server.1.13.2.jar"
+server="minecraft_server.1.14.jar"
 
 if [ ! -f /data/$server ]
 then
