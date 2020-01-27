@@ -3,11 +3,8 @@
 # docker-minecraft /start.sh script
 # -----------------------------------------------------------------------------
 
-server="minecraft_server.1.15.1.jar"
-
-if [ ! -f /data/$server ]
-then
-    curl "https://launcher.mojang.com/v1/objects/4d1826eebac84847c71a77f9349cc22afd0cf0a1/server.jar" -o /data/$server
+if [ -z $server ];then
+	server="minecraft_server.jar"
 fi
 
 if [ ! -f /data/eula.txt ]
